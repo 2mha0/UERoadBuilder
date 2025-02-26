@@ -1,4 +1,4 @@
-- ![](./Snapshot.png)
+![](./Snapshot.png)
 
   # UERoadBuilder
 
@@ -46,6 +46,8 @@
 
   * 我编译了`UE 5.1.1`版本和`UE 5.4.4`版本，中间的`UE 5.2.1`和`UE 5.3.2`应该都是没问题的，至于最高版本的`UE 5.5.3`还待测试。
 
+  * 对于`UE 5.4.4`可以正常使用，但`UE 5.1.1`插件的自带资产由于版本兼容问题，就没有自带的路面资产
+
   * 对于`UE 5.1.1`需要安装`visual studio 2019`相关工具，对于`UE 5.4.4`需要安装`visual studio 2022`相关工具
   
   1. 由于原始仓库中没有`nanosvg`模块，但本仓库已经将该模块的代码加上。所以对于本仓库就不需要将[Unreal Engine](https://github.com/chenyong2github/UnrealEngine)中的`UnrealEngine/Engine/Source/ThirdParty/nanosvg/`包移动到`RoadBuilder\Source\ThirdParty`下，`nanosvg`包中的`nanosvg.Build.cs`和`nanosvg.tps`也已经被删除，用户可以跳过本步骤
@@ -58,7 +60,10 @@
      1. `-Plugin`：后面的是插件路径
      2. `-Package`：后面是插件编译好的路径
      3. `-TargetPlatforms`：后面是只编译win平台，不加这个我的会报错，说找不到`Linux`的东西
-  
+   5. 当最后倒数第3行出现`BUILD SUCCESSFUL`则说明编译成功了
+
+  ### 使用
+
   ### 如何使用
   
   - Clone this repo to <u>project/plugins/RoadBuilder</u> folder
