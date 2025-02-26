@@ -63,7 +63,7 @@
    5. 当最后倒数第3行出现`BUILD SUCCESSFUL`则说明编译成功了
 
   ### 使用
-    在项目目录下（也就是`xxx.uproject`所在目录）新建`Plugins`目录，在该目录下将编译好的插件放入`Plugins`目录中
+  在项目目录下（也就是`xxx.uproject`所在目录）新建`Plugins`目录，在该目录下将编译好的插件放入`Plugins`目录中
 
 
   ### 如何使用
